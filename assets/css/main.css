@@ -5,7 +5,8 @@
   font-family: 'xinyenian';
   font-weight: normal;
   /* src: url('~assets/font/font.otf') format('truetype') */
-  src: url('https://priate.oss-cn-beijing.aliyuncs.com/products/assets/font.otf') format('truetype')
+  /* src: url('https://priate.oss-cn-beijing.aliyuncs.com/products/assets/font.otf') format('truetype') */
+  src: url('https://priate.oss-cn-beijing.aliyuncs.com/products/assets/doc.virts.app.otf') format('truetype')
 }
 
 a {

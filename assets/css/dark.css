@@ -1,0 +1,21 @@
+.dark-mode {
+  --font-color: #ffffff;
+  --bg: rgb(34, 34, 34);
+  --red: rgb(236, 95, 103);
+  --blue: rgb(87, 194, 193);
+  --icon-buttion-hover: rgba(45, 45, 45);
+  --icon-buttion-right: rgb(236, 95, 103);
+  --icon-buttion-left: rgb(87, 194, 193);
+  --card-bg: rgba(100, 100, 100, 0.1);
+  --card-box-shadow: rgb(255 255 255);
+  --card-block-bg: rgba(0, 0, 0, 0.5);
+  --card-border: white;
+  --divider-font-color: black;
+  --divider-bg: white;
+  --unlock-dialog-title: var(--font-color);
+  --unlock-dialog-bg : rgba(0, 0, 0, 0.8);
+  --unlock-dialog-input-bg : rgba(40, 40, 40, 0.4);
+  --unlock-dialog-input-font : var(--font-color);
+  --unlock-dialog-input-focus-bg : rgba(60, 60, 60, 0.8);
+  --unlock-dialog-button : rgba(255, 255, 255, 0.3);
+}

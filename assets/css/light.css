@@ -1,0 +1,22 @@
+.light-mode {
+  --font-color: #660000;
+  --bg: rgb(240, 223, 175);
+  --red: rgb(173, 123, 124);
+  --blue: rgb(50, 161, 201);
+  --icon-buttion-hover: rgba(255, 255, 255, 0.7);
+  --icon-buttion-right: #660000;
+  --icon-buttion-left: #660000;
+  --card-bg: rgba(255, 255, 255, 0.3);
+  --card-box-shadow: rgb(0 0 0);
+  /* --card-block-bg: rgba(173, 123, 124, 0.5); */
+  --card-block-bg: rgba(255, 255, 255, 0.7);
+  --card-border: #686868;
+  --divider-font-color: rgb(240, 223, 175);
+  --divider-bg: #660000;
+  --unlock-dialog-title: var(--font-color);
+  --unlock-dialog-bg : rgba(255, 255, 255, 0.9);
+  --unlock-dialog-input-bg : white;
+  --unlock-dialog-input-font : var(--font-color);
+  --unlock-dialog-input-focus-bg : rgba(173, 123, 124, 0.3);
+  --unlock-dialog-button : rgba(173, 123, 124, 0.5);
+}

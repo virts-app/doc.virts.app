@@ -1,0 +1,121 @@
+@import '@/assets/css/dark.css';
+@import '@/assets/css/light.css';
+
+@font-face {
+  font-family: 'xinyenian';
+  font-weight: normal;
+  /* src: url('~assets/font/font.otf') format('truetype') */
+  src: url('https://priate.oss-cn-beijing.aliyuncs.com/products/assets/font.otf') format('truetype')
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+/* 全局文字不可选 */
+* {
+  font-family: 'xinyenian';
+  color: var(--font-color);
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  pointer-events: auto;
+}
+
+input {
+  user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+}
+textarea {
+  user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+}
+
+.head-list-right i {
+  color: var(--icon-buttion-right)
+}
+
+.head-list-left i {
+  color: var(--icon-buttion-left)
+}
+
+.icon-button:hover {
+  background-color: var(--icon-buttion-hover)
+}
+
+.icon-button:focus {
+  background-color: transparent
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--card-border);
+}
+
+.card:hover {
+  box-shadow: 0 2px 12px 0 var(--card-box-shadow) !important;
+}
+
+.block {
+  background-color: var(--card-block-bg)
+}
+
+.card-divider {
+  background-color: var(--divider-bg)
+}
+
+.el-divider__text {
+  color: var(--divider-font-color);
+  background-color: var(--divider-bg)
+}
+
+.next_button {
+  border-color: var(--card-border);
+}
+
+.next_button:hover {
+  border-color: var(--card-border) !important;
+}
+
+.unlock .el-dialog{
+  background-color: var(--unlock-dialog-bg);
+}
+
+.unlock .el-dialog__title {
+  color: var(--unlock-dialog-title)
+}
+
+.unlock-input input {
+  background-color: var(--unlock-dialog-input-bg);
+  color: var(--unlock-dialog-input-font);
+  border-color: var(--font-color);
+}
+.unlock-input input:focus {
+  background-color: var(--unlock-dialog-input-focus-bg) ;
+  border-color: transparent;
+}
+
+.dialog-footer>button{
+  background-color: var(--unlock-dialog-button);
+  border-color: transparent;
+}
+.dialog-footer>button:hover{
+  background-color: var(--unlock-dialog-button);
+  border-color: transparent;
+}

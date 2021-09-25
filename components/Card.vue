@@ -8,7 +8,7 @@
             <div style="padding: 14px;">
               <span><i v-show="book.isBlock" class="el-icon-lock"></i>{{book.isBlock ? '' : book.name}}</span>
               <div class="bottom clearfix">
-                <div class="desc">{{book.isBlock ? '凝视深渊' : book.date}}</div>
+                <div class="desc">{{book.isBlock ? '已锁定' : book.date}}</div>
               </div>
             </div>
           </el-card>

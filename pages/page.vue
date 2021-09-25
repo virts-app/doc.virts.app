@@ -11,6 +11,9 @@
           <el-link :href='homePageUrl' target='_blank'>
             <el-button class="icon-button" icon="el-icon-s-promotion"></el-button>
           </el-link>
+          <el-link :href='"mailto:" + homePageEmail'>
+            <el-button @click="" class="icon-button" icon="el-icon-message"></el-button>
+          </el-link>
           <el-link target='_blank'>
             <el-button @click="openUnlock" class="icon-button" icon="el-icon-key"></el-button>
           </el-link>

@@ -6,11 +6,13 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "fontmin": "node assets/js/fontmin.js"
   },
   "dependencies": {
     "core-js": "^3.8.2",
     "element-ui": "^2.15.0",
+    "fontmin": "^0.9.9",
     "nuxt": "^2.14.12"
   },
   "devDependencies": {

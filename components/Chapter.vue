@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(item, index) in bookList" :key="index">
+    <div v-for="(item, index) in chapters" :key="index">
       <el-divider class="card-divider" content-position="left">{{item.category}}</el-divider>
       <el-row class="allcard">
         <el-col :xs="24" :sm="12" :md="8" :lg="6" :xl="4" v-for="(book, index) in item.books" :key="index">
@@ -62,12 +62,10 @@
 </style>
 
 <script>
-  import bookList from '~/assets/data/booklist.json'
-  
   export default {
+    props : ['chapters'],
     data() {
       return {
-        bookList: bookList,
       }
     },
     methods: {

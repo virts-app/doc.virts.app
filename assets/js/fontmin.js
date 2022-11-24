@@ -1,19 +1,41 @@
 const Fontmin = require('fontmin');
 const fs = require('fs');
+const path = require('path');
+/**
+ * 遍历指定目录下的所有文件
+ * @param {*} dir 
+ */
+ const getAllFile = function(dir){
+    let res=[]
+    function traverse(dir){
+        fs.readdirSync(dir).forEach((file)=>{
+            const pathname = path.join(dir,file)
+            if(fs.statSync(pathname).isDirectory()){
+                traverse(pathname)
+            }else{
+                res.push(pathname)
+            }
+        })
+    }
+    traverse(dir)
+    return res;
+}
 
 const srcPath = 'assets/font/font.ttf'; // 字体源文件
 const destPath = 'assets/font/fontmin';    // 输出路径
 const datapath = [
-    "assets/data/booklist.json",
-    "pages/index.vue",
-    "components/Card.vue",
-    "components/Unlock.vue"
+    "assets/data",
+    "pages",
+    "components",
 ];
 var text = "";
 datapath.forEach((path)=>{
-    console.log(`正在处理 ${path} 文件`)
-    var data = fs.readFileSync(path, 'utf-8');    
-    text += data.toString()
+    files = getAllFile(path)
+    files.forEach((file)=>{
+        console.log(`正在处理 ${file} 文件`)
+        var data = fs.readFileSync(file, 'utf-8');    
+        text += data.toString()
+    })
 })
 
 // 初始化
